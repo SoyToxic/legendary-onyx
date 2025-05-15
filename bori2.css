@@ -120,7 +120,7 @@ span {
 
 
 .footer {
-	margin-top: 275px;
+	margin-top: 475px;
 	width: 100%;
 	padding: 15px 15%;
 	backdrop-filter: blur(1px);
@@ -220,7 +220,7 @@ padding: 50px;
             box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
             max-width: 420px;
             width: 100%;
-	    margin-top: 350px;
+	    margin-top: 550px;
                     }
         .payment-container h2 {
             text-align: center;
