@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title> Colombori </title>
+	<link href="bori2.css" rel="stylesheet" />
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+<script src="https://kit.fontawesome.com/9bf40843cd.js" crossorigin="anonymous"></script>
+
+	<script>
+        function formatCardNumber(input) {
+            let value = input.value.replace(/\D/g, '');
+            value = value.replace(/(\d{4})/g, '$1 ').trim();
+            input.value = value.substring(0, 19);
+        }
+        function formatCVV(input) {
+            input.value = input.value.replace(/\D/g, '').slice(0, 4);
+        }
+        function formatExpiryDate(input) {
+            let value = input.value.replace(/\D/g, '');
+            if (value.length > 2) {
+                value = value.slice(0, 2) + '/' + value.slice(2, 4);
+            }
+            input.value = value.substring(0, 5);
+        }
+    </script>
+</head>
+
+<body>
+  <header>
+	
+		<a href="index.html" class="logo">Colombori <span>Fitness</span></a>
+
+		<div class='bx bx-menu' id="menu-icon"></div>
+		
+		<ul class="navbar">
+			<li><a href="index.html">Home</a></li>
+			<li><a href="membership.html">Membership Form</a></li>
+			<li><a href="location.html">Find a Gym</a></li>
+		</ul>
+		
+		<div class="top-btn">
+			<a href="Membership.html" class="nav-btn">Join Us</a>
+		</div>
+  </header>
+
+	<div class="pos_cen">
+
+	<div class="payment-container">
+        <h2>Registration</h2>
+        <form>
+		<div class="form-group">
+			<label>Your Name</label>
+			<input type="text" placeholder="Your Name" required>
+		</div>
+		<div class="form-group">
+			<label>Your email</label>
+			<input type="email" placeholder="Your email" required>
+		</div>
+		<div class="form-group">
+			<label>Date of Birth</label>
+			<input type="date">
+		</div>
+
+            <div class="form-group">
+                <label for="card-name">Cardholder Name</label>
+                <input type="text" id="card-name" placeholder="John Smith" required>
+            </div>
+
+            <div class="form-group">
+                <label for="card-number">Card Number</label>
+                <input type="text" id="card-number" placeholder="1234 5678 9012 3456" maxlength="19" oninput="formatCardNumber(this)" required>
+            </div>
+
+            <div class="form-group">
+                <label for="expiry-date">Expiration Date</label>
+                <input type="text" id="expiry-date" placeholder="MM/YY" maxlength="5" oninput="formatExpiryDate(this)" required>
+            </div>
+
+            <div class="form-group">
+                <label for="cvv">CVV</label>
+                <input type="text" id="cvv" placeholder="123" maxlength="4" oninput="formatCVV(this)" required>
+            </div>
+
+			<button type="submit" class="btn">Join Now!</button>
+		</form>
+	</div>
+</div>
+
+	
+	
+
+
+
+<footer>
+ <div class="footer">
+	  <div class="col-1">
+		<h3>More From Us!</h3>
+		<a href="index.html">About Us</a>
+		<a href="membership.html">Find a Gym</a>
+		<a href="location.html">Join Us!</a>
+		
+	</div>
+	<div class="col-2">
+		<h3>Sign up for Promos!</h3>
+		<form>
+		  <input type="email" placeholder="Your Email Address" required>
+		<br>
+		  <button type="submit">SUBSCRIBE</button>
+		</form>
+	</div>
+	<div class="col-3">
+		<h3>CONTACT US</h3>
+		<p> 41-50, Colombori Rd, Carribean Islands </p>
+		<p> 787-353-1234 </p>
+		<p> @Colombori on all socials! </p>
+
+
+		<div class="social-icons">
+		<i class="fa-brands fa-facebook"></i>
+		<i class="fa-brands fa-twitter"></i>
+		<i class="fa-brands fa-instagram"></i>
+		<i class="fa-brands fa-behance"></i>
+		</div>
+	</div>
+ </div>
+</footer>
+	 
+</body>
+
+</html>
