@@ -92,7 +92,7 @@ span {
 	display: inline-block;
 	padding: 1rem 2.8rem;
 	background: transparent;
-	color: black;
+	color: Yellow;
 	border: 2px solid Yellow;
 	border-radius: 1rem;
 	font-size: 1.6rem;
@@ -254,7 +254,7 @@ padding: 50px;
         .btn {
             width: 100%;
             padding: 14px;
-            background: Yellow;
+            background: black;
             color: white;
             border: none;
             border-radius: 8px;
